@@ -68,7 +68,9 @@
                                             //choose your own adventure book
                                             case"2":
                                             System.Console.WriteLine("You decide to grab The parable of stanley from the bookself\n  ");
+                                            Thread.Sleep(3000);
                                             ResetAndClear("The end is never the end is never the end is never\n",BookChoice);
+                                            BookChoice="";
                                             break;
                                             // writings of a historian book
                                             case"3":
@@ -76,6 +78,7 @@
                                             // what the program should do if none of those optiens are selected.
                                             default:
                                             ResetAndClear("Please select from the 3 book choices above\n", BookChoice);
+                                            BookChoice="";
                                             break;
 
                                         }
