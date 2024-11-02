@@ -61,13 +61,23 @@
                                         BookChoice=Console.ReadLine();
                                         switch(BookChoice.ToLower())
                                         {
+                                            // history book
                                             case"1":
+                                            System.Console.WriteLine("You grab History of HydroElectricty off of the shelf\n");
                                             break;
+                                            //choose your own adventure book
                                             case"2":
+                                            System.Console.WriteLine("You decide to grab The parable of stanley from the bookself\n  ");
+                                            ResetAndClear("The end is never the end is never the end is never\n",BookChoice);
                                             break;
+                                            // writings of a historian book
                                             case"3":
                                             break;
-                                            
+                                            // what the program should do if none of those optiens are selected.
+                                            default:
+                                            ResetAndClear("Please select from the 3 book choices above\n", BookChoice);
+                                            break;
+
                                         }
                                     }
                                     PromptedClearScreen();
