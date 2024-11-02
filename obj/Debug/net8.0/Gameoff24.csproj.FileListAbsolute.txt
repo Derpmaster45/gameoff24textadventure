@@ -1,0 +1,15 @@
+/home/jay/Documents/gameoff24/Gameoff24/bin/Debug/net8.0/Gameoff24
+/home/jay/Documents/gameoff24/Gameoff24/bin/Debug/net8.0/Gameoff24.deps.json
+/home/jay/Documents/gameoff24/Gameoff24/bin/Debug/net8.0/Gameoff24.runtimeconfig.json
+/home/jay/Documents/gameoff24/Gameoff24/bin/Debug/net8.0/Gameoff24.dll
+/home/jay/Documents/gameoff24/Gameoff24/bin/Debug/net8.0/Gameoff24.pdb
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.GeneratedMSBuildEditorConfig.editorconfig
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.AssemblyInfoInputs.cache
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.AssemblyInfo.cs
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.csproj.CoreCompileInputs.cache
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.sourcelink.json
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.dll
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/refint/Gameoff24.dll
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.pdb
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/Gameoff24.genruntimeconfig.cache
+/home/jay/Documents/gameoff24/Gameoff24/obj/Debug/net8.0/ref/Gameoff24.dll
