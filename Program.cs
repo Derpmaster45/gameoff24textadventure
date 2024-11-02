@@ -7,12 +7,12 @@
         public static void Main(string[] args)
         {
              void QuitGame()
-        {
-            Thread.Sleep(2000);
-            Console.WriteLine("GoodBye!\n");
-            Environment.Exit(0);
+            {
+                Thread.Sleep(2000);
+                Console.WriteLine("GoodBye!\n");
+                Environment.Exit(0);
 
-        }   
+            }   
         // funciton to reset and  clear 
             string ResetAndClear(string errorMessage, string switchinputtoreset)
             {
@@ -54,10 +54,12 @@
                                 // read books
                                 case "1":
                                     System.Console.WriteLine();
+                                    PromptedClearScreen();
                                 break;
                                 // look at maps
                                 case "2":
                                     System.Console.WriteLine();
+                                    PromptedClearScreen();
                                 break;
                                 case "q":
                                     QuitGame();
