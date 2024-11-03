@@ -57,7 +57,7 @@
                                     string BookChoice="";
                                     while(BookChoice=="")
                                     {
-                                        Console.WriteLine("Which book would you like to take from the bookself \n 1) History of HydroElectricity \n  2) The Stanley parable \n 3) Writings of john\n ");
+                                        Console.WriteLine("Which book would you like to take from the bookself \n 1) History of HydroElectricity \n  2) The  parable of stanley \n 3) Writings of john\n ");
                                         BookChoice=Console.ReadLine();
                                         switch(BookChoice.ToLower())
                                         {
@@ -67,13 +67,14 @@
                                             break;
                                             //choose your own adventure book
                                             case"2":
-                                            System.Console.WriteLine("You decide to grab The parable of stanley from the bookself\n  ");
+                                            System.Console.WriteLine("You decide to grab The parable of stanley from the bookself\n  you spend hours getting every ending ");
                                             Thread.Sleep(3000);
                                             ResetAndClear("The end is never the end is never the end is never\n",BookChoice);
                                             BookChoice="";
                                             break;
                                             // writings of a historian book
                                             case"3":
+                                            System.Console.WriteLine("you decide read the book from john talking about the inhabitance of the region.\n You learn that the inhabitance was 100 miles from the coast of an island.\n The Inhabitance were farmers and created aquaducts.  The book does not theorize about the dissappearance of the people or culture.\n");
                                             break;
                                             // what the program should do if none of those optiens are selected.
                                             default:
