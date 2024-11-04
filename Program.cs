@@ -45,36 +45,63 @@
                         Console.WriteLine("The year is 1849, You have set out to find information on the disappearance of a civilization known as Shattered Harmony Refuge.\n The first thing that you are tasked to do is find a potential location of this civilization. Luckily, you have texts that may give you location.\n You may also look at maps to deduce the location, without the books, the location may most likely be inacurate.\n" );
                         // switch to prompt player for first course of action
                         string PlayerInitChoice="";
+                        bool bHasReadBooks=false;
+                        int BooksRead=0;
                         while(PlayerInitChoice=="")
                         {
-                            Console.WriteLine("Would you like to: 1) Read historical books \n 2) Look at maps");
+                            Console.WriteLine("Would you like to: \n1) Read historical books \n 2) Look at maps");
                             PlayerInitChoice=Console.ReadLine();
                             switch(PlayerInitChoice.ToLower())
                             {
                                 // read books
                                 case "1":
+                                case "read books":
+                                case "read historical books":
                                     Console.WriteLine("You decide to read historical books to see if you can pinpoint a region for the shattered Harmony Refuge\n");
                                     string BookChoice="";
                                     while(BookChoice=="")
                                     {
-                                        Console.WriteLine("Which book would you like to take from the bookself \n 1) History of HydroElectricity \n  2) The  parable of stanley \n 3) Writings of john\n ");
+                                        Console.WriteLine("Which book would you like to take from the bookself \n 1) History of HydroElectricity \n  2) The  parable of stanley \n 3) Writings of john\n  Q if you would like to quit\n");
                                         BookChoice=Console.ReadLine();
                                         switch(BookChoice.ToLower())
                                         {
-                                            // history book
+                                            // history of hydroelectricity book
                                             case"1":
-                                            System.Console.WriteLine("You grab History of HydroElectricty off of the shelf\n");
+                                            case"history of hydroelectricty":
+                                            System.Console.WriteLine("You grab a book called 'History of HydroElectricty' off of the shelf\n ");
+                                            if(BooksRead==2)
+                                            {
+                                                // insert story code
+                                                bHasReadBooks=true;
+                                            } else
+                                            {
+                                                BooksRead++;
+                                                BookChoice="";
+                                            }
                                             break;
                                             //choose your own adventure book
                                             case"2":
-                                            System.Console.WriteLine("You decide to grab The parable of stanley from the bookself\n  you spend hours getting every ending ");
+                                            case"The parable of stanley":
+                                            System.Console.WriteLine("You decide to grab a book called 'The parable of stanley' from the bookself\n  you spend hours getting every ending ");
                                             Thread.Sleep(3000);
                                             ResetAndClear("The end is never the end is never the end is never\n",BookChoice);
                                             BookChoice="";
                                             break;
                                             // writings of a historian book
                                             case"3":
+                                            case" Writings of john":
                                             System.Console.WriteLine("you decide read the book from john talking about the inhabitance of the region.\n You learn that the inhabitance was 100 miles from the coast of an island.\n The Inhabitance were farmers and created aquaducts.  The book does not theorize about the dissappearance of the people or culture.\n");
+                                            if(BooksRead==2)
+                                            {
+                                                bHasReadBooks=true;
+                                            } else
+                                            {
+                                                BooksRead++;
+                                            }
+                                            break;
+                                            // if player wants to quit
+                                            case"q":
+                                            QuitGame();
                                             break;
                                             // what the program should do if none of those optiens are selected.
                                             default:
@@ -88,7 +115,16 @@
                                 break;
                                 // look at maps
                                 case "2":
-                                    System.Console.WriteLine();
+                                    System.Console.WriteLine("You decide to look at maps of the kingdom\n");
+                                    if(bHasReadBooks==true)
+                                    {
+                                        // story goes here.
+                                    }
+                                    else
+                                    {
+                                        System.Console.WriteLine("");
+                                        PlayerInitChoice="";
+                                    }
                                     PromptedClearScreen();
                                 break;
                                 case "q":
