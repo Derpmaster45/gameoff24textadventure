@@ -61,7 +61,7 @@
                                     string BookChoice="";
                                     while(BookChoice=="")
                                     {
-                                        Console.WriteLine("Which book would you like to take from the bookself \n 1) History of HydroElectricity \n  2) The  parable of stanley \n 3) Writings of john\n  Q if you would like to quit\n");
+                                        Console.WriteLine("Which book would you like to take from the bookself\n1) History of HydroElectricity\n2) The parable of stanley \n3) Writings of john\nQ if you would like to quit\n");
                                         BookChoice=Console.ReadLine();
                                         switch(BookChoice.ToLower())
                                         {
@@ -73,6 +73,7 @@
                                             {
                                                 // insert story code
                                                 bHasReadBooks=true;
+                                                PlayerInitChoice="";
                                             } else
                                             {
                                                 BooksRead++;
@@ -94,9 +95,34 @@
                                             if(BooksRead==2)
                                             {
                                                 bHasReadBooks=true;
+                                                PlayerInitChoice="";
                                             } else
                                             {
                                                 BooksRead++;
+                                                // inform users that they may not have enough info to move foreward.
+                                                string MoveForward="";
+                                                while(MoveForward=="")
+                                                {
+                                                     System.Console.WriteLine("Do you want to \n1) read more books\n2) look at maps ");
+                                                     MoveForward=Console.ReadLine();
+                                                     switch (MoveForward.ToLower())
+                                                     {
+                                                        case"1":
+                                                        case"read more books":
+                                                        System.Console.WriteLine("You decide to read more books\n");
+                                                        BookChoice="";
+                                                        break;
+                                                        case "2":
+                                                        case "look at maps":
+                                                        System.Console.WriteLine("You decide to look at maps\n");
+                                                        PlayerInitChoice="";
+                                                        break;
+                                                        default:
+                                                        ResetAndClear("Please choose from the 2 above options \n1) read more books \n2) look at maps\n",MoveForward);
+                                                        break;
+                                                     }
+                                                }
+                                                //BookChoice="";
                                             }
                                             break;
                                             // if player wants to quit
@@ -119,10 +145,11 @@
                                     if(bHasReadBooks==true)
                                     {
                                         // story goes here.
+                                        System.Console.WriteLine(bHasReadBooks);
                                     }
                                     else
                                     {
-                                        System.Console.WriteLine("");
+                                        System.Console.WriteLine("You decide to look at maps\n Not knowing the general location of the civilization\n You decide to look at some of the books you have to try and find the answer.\n");
                                         PlayerInitChoice="";
                                     }
                                     PromptedClearScreen();
